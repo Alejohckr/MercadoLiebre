@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--por default-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--por default-->
+        <meta name="viewport" content="width=device-width,initial-scale=1"><!--por default-->
+        <title>cuenta</title><!--nombre uqe se va a ver en la pestaña del navegador-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"><!--Fuentes a usar traida de google fonts este caso Roboto-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"><!--link de los iconos a usar-->
+        <link href="/css/normalize.css" rel="normalize">
+        <link href="./css/styles_register.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+    <!--CREAR CUENTA-->
+            <div class="caja1"><h5>Crear cuenta</h5>
+
+                <form action="logout" method="post" class="create-form">
+                    <div class="control-formulario">
+                        <p>
+                            <label for="name" ></label>
+                            <input type="name" id="name" name="name" class="control" placeholder="Nombre y apellido" required>
+                        </p>
+                    </div>
+                    <div class="control-formulario">
+                        <p>
+                            <label for="username" ></label>
+                            <input type="username" id="username" name="username" class="control" placeholder="Nombre de usuario"required>
+                        </p>
+                    </div>
+                    <div class="control-formulario">
+                        <p>
+                            <label for="email" ></label>
+                            <input type="email" id="reg_email" name="email" class="control" placeholder="Email" required>
+                        </p>
+                    </div>
+                     <!--FECHA DE NACIMIENTO-->
+                    <div class="caja2"><h6>Fecha de nacimiento</h6>           
+                            <div class="control-formulario">
+                                <p>
+                                    <label for="date" ></label>
+                                    <input type="date" id="date" name="date" class="control" placeholder="mm/dd/yyyy" required>
+                                </p>
+                            </div>
+                            <div class="control-formulario">
+                                <p>
+                                    <label for="address" ></label>
+                                    <input type="text" id="address" name="address" class="control" placeholder="Direccion de domicilio" required>
+                                </p>
+                            </div>
+                    </div>
+                    <!--PERFIL DE USUARIO-->
+                    <div class="caja3"><h6>Perfil del usuario</h6>
+        
+                            <div class="control-formulario">
+                                <p>
+                                    <input type="radio" name="Perfil" value="Comprador">
+                                    <label for="Perfil" >Comprador</label>
+                                </p>
+                            </div>
+                            <div class="control-formulario">
+                                <p>
+                                <input type="radio" name="Perfil" value="Comprador">
+                                <label for="Perfil" >Vendedor</label>
+                                </p>
+                            </div> 
+                    </div> 
+                     <!--INTERESES-->
+                    <div class="caja4"><h6>Intereses</h6>
+                    <div class="control-formulario">
+                           <p>
+                              <input type="checkbox" name="Intereses"  value="Electro">
+                              <label for="Perfil" >Electro</label>
+                           </p>
+                    </div>
+                    <div class="control-formulario">
+                        <p>
+                           <input type="checkbox" name="Intereses"  value="Moda">
+                           <label for="Perfil" >Moda</label>
+                        </p>
+                    </div>
+                    <div class="control-formulario">
+                        <p>
+                           <input type="checkbox" name="Intereses"  value="Hogar">
+                           <label for="Perfil" >Hogar</label>
+                        </p>
+                    </div>
+                    <div class="control-formulario">
+                        <p>
+                           <input type="checkbox" name="Intereses"  value="Jugueteria">
+                           <label for="Perfil" >Jugueteria</label>
+                        </p>
+                    </div>
+                    <div class="control-formulario">
+                        <p>
+                           <input type="checkbox" name="Intereses" value="Vida sana">
+                           <label for="Perfil" >Vida sana</label>
+                        </p>
+                    </div>
+                      <!--contraseña-->
+                    <div class="control-formulario">
+                        <p>
+                            <label for="password" >Contraseña *</label>
+                            <input type="password" id="reg_password" name="password" class="control" required>
+                        </p>
+                    </div>
+                    <div class="control-formulario">
+                        <p>
+                            <label for="confirm_password" >Confirmar contraseña *</label>
+                            <input type="password" id="confirm_password" name="confirm_password" class="control" required>
+                        </p>
+                    </div>
+                    <div class="control-formulario">
+                        <button class="button-log" type="submit"> <a href="http://localhost:3030/">Registrarse</a>
+                        </button>
+                    </div>
+                </form>                                            
+            </div> 
+        </main>
+    </body>
+
